@@ -5,7 +5,7 @@
 const card = document.querySelector(".card");
 const details = document.querySelector(".detail");
 const cityform = document.querySelector(".change-location");
-const time = document.querySelector('img .time')
+const time = document.querySelector('.time')
 const icon= document.querySelector('.icon img')
 
 
@@ -30,14 +30,15 @@ const {cityDetail,weather}=data
     }
 
     // <-------------Updating Image when Calling data from API-------------------------->
-    let timesrc=''
+    let timesrc= "";
     if(weather.IsDayTime){
-        timesrc = 'images/day.svg'
+        timesrc = 'images/day.svg';
        
     }else{
         timesrc='images/night.svg'
         
     }
+
     time.setAttribute('src', timesrc)
     
     

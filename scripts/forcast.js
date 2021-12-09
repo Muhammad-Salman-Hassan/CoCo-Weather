@@ -1,5 +1,6 @@
 const key = "iexXItamzdZIh3ijKA4a9DAXk4xi6LC2";
 
+// ------------------------------------------Getting Weather Update from API--------------------------------------------------
 const getweather = async (id) => {
   const base = "http://dataservice.accuweather.com/currentconditions/v1/";
   const query = `${id}?apikey=${key}`;
@@ -8,6 +9,8 @@ const getweather = async (id) => {
   return data[0];
 };
 
+
+// ---------------------------------------------gettting city update form API----------------------------------------------
 const getCity = async (city) => {
   const base = "http://dataservice.accuweather.com/locations/v1/cities/search";
   const query = `?apikey=${key}&q=${city}`;
